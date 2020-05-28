@@ -14,7 +14,9 @@ public class Base {
     
 	public WebDriver initializeDriver() throws IOException {
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream("/Users/vandanamoriwal/Desktop/E2EProject/src/main/java/resources/config.properties");
+		
+	    String ss=System.setProperty("user.home", "src/main/java/resources/config.properties");
+		FileInputStream fis = new FileInputStream(ss);
 		prop.load(fis);
 
 		String browserName = prop.getProperty("browser");
@@ -27,7 +29,7 @@ public class Base {
 
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"/Users/vandanamoriwal/Desktop/E2EProject/drivers/chromedriver");
+					"/EcommerceProject/drivers");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			
