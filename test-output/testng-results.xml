@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-29T00:59:12 IST" name="Default suite" finished-at="2020-05-29T00:59:12 IST" duration-ms="118">
+  <suite started-at="2020-06-03T00:55:37 IST" name="Default suite" finished-at="2020-06-03T00:55:37 IST" duration-ms="88">
     <groups>
     </groups>
-    <test started-at="2020-05-29T00:59:12 IST" name="Default test" finished-at="2020-05-29T00:59:12 IST" duration-ms="118">
-      <class name="e2etests.HomePage">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:e2etests.HomePage@343570b7]" started-at="2020-05-29T00:59:12 IST" name="initialize" finished-at="2020-05-29T00:59:12 IST" duration-ms="38" status="FAIL">
+    <test started-at="2020-06-03T00:55:37 IST" name="Default test" finished-at="2020-06-03T00:55:37 IST" duration-ms="88">
+      <class name="e2etests.WomenSection">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:e2etests.WomenSection@7748410a]" started-at="2020-06-03T00:55:37 IST" name="initialize" finished-at="2020-06-03T00:55:37 IST" duration-ms="21" status="FAIL">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[/Users/vandanamoriwal (Is a directory)]]>
@@ -19,7 +19,7 @@ at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
 at resources.Base.initializeDriver(Base.java:19)
-at e2etests.HomePage.initialize(HomePage.java:27)
+at e2etests.WomenSection.initialize(WomenSection.java:16)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,7 +50,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation(java.lang.String)[pri:0, instance:e2etests.HomePage@343570b7]" started-at="2020-05-29T00:59:12 IST" name="basePageNavigation" data-provider="getData" finished-at="2020-05-29T00:59:12 IST" duration-ms="0" status="SKIP">
+        <test-method signature="womenApparel()[pri:0, instance:e2etests.WomenSection@7748410a]" started-at="2020-06-03T00:55:37 IST" name="womenApparel" finished-at="2020-06-03T00:55:37 IST" duration-ms="0" status="SKIP">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[/Users/vandanamoriwal (Is a directory)]]>
@@ -62,7 +62,7 @@ at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
 at resources.Base.initializeDriver(Base.java:19)
-at e2etests.HomePage.initialize(HomePage.java:27)
+at e2etests.WomenSection.initialize(WomenSection.java:16)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -92,51 +92,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method signature="createAccount()[pri:0, instance:e2etests.HomePage@343570b7]" started-at="2020-05-29T00:59:12 IST" name="createAccount" finished-at="2020-05-29T00:59:12 IST" duration-ms="0" status="SKIP">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[/Users/vandanamoriwal (Is a directory)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: /Users/vandanamoriwal (Is a directory)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-at resources.Base.initializeDriver(Base.java:19)
-at e2etests.HomePage.initialize(HomePage.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-at org.testng.TestRunner.beforeRun(TestRunner.java:609)
-at org.testng.TestRunner.run(TestRunner.java:580)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAccount -->
-      </class> <!-- e2etests.HomePage -->
+        </test-method> <!-- womenApparel -->
+      </class> <!-- e2etests.WomenSection -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

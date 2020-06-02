@@ -4,12 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class UserPersonalInformation {
+public class UserPersonalInformationPage {
 
 	public WebDriver driver;
 	public WebElement elm;
 
-	public UserPersonalInformation(WebDriver driver) {
+	public UserPersonalInformationPage(WebDriver driver) {
 
 		this.driver = driver;
 

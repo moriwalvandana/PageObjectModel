@@ -4,6 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="e2etests.HomePage"/>
+       <class name="e2etests.WomenSection"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

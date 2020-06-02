@@ -6,7 +6,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pages.SignUpPage;
-import pages.UserPersonalInformation;
+import pages.UserPersonalInformationPage;
 import resources.Base;
 
 import org.testng.annotations.Test;
@@ -43,7 +43,7 @@ public class HomePage extends Base {
 
 	public void createAccount() throws InterruptedException {
 
-		UserPersonalInformation userinfo = new UserPersonalInformation(driver);
+		UserPersonalInformationPage userinfo = new UserPersonalInformationPage(driver);
 		userinfo.personalInformation();
 		userinfo.addressDetails();
 		

@@ -3,8 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="e2etests.WomenSection">
+        <methods>
+          <include name="initialize"/>
+          <include name="womenApparel"/>
+        </methods>
+      </class> <!-- e2etests.WomenSection -->
       <class name="e2etests.HomePage">
         <methods>
+          <include name="createAccount"/>
+          <include name="initialize"/>
           <include name="basePageNavigation"/>
         </methods>
       </class> <!-- e2etests.HomePage -->
